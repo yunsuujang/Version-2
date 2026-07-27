@@ -35,7 +35,7 @@ export const projects: Project[] = [
       "A GIS-supported strategy linking health vulnerability, green-space quality and corridor accessibility around the planned HOV ZaanIJ line.",
     overview:
       "This Metropolitan Solutions project used spatial analysis, field assessment, resident input and expert interviews to identify where neighbourhood-scale green infrastructure could create the greatest public-health value. The final strategy combined priority intervention sites with an accessible green-corridor scenario.",
-    image: "/images/project-zaanstad.jpg",
+    image: "/images/project-zaanstad.png",
     imageAlt: "Zaanstad vulnerability map identifying overlapping urban health and green-infrastructure deficiencies",
     tools: ["Python", "GeoPandas", "QGIS", "OSMnx", "Spatial MCA", "Survey research"],
     stats: [
@@ -58,7 +58,7 @@ export const projects: Project[] = [
       "A passive-first renovation proposal combining demand reduction, heat recovery, climate-responsive ventilation and building-integrated photovoltaics.",
     overview:
       "The project transformed a low-performing student residence in Delft into a calculated zero-energy and zero-carbon design. Envelope improvements and passive systems reduced demand before renewable production was added to the roof and façades.",
-    image: "/images/project-zero-energy.jpg",
+    image: "/images/project-zero-energy.png",
     imageAlt: "Final energy-balance results for the Villa Solheim zero-energy renovation",
     tools: ["ZED Tool", "Passive design", "Energy balance", "BiPV", "Heat recovery", "Embodied carbon"],
     stats: [
@@ -104,7 +104,7 @@ export const projects: Project[] = [
       "A mixed-method study of how extreme heat affects passenger comfort, stress and travel behaviour in Amsterdam's tram system.",
     overview:
       "The research combined literature, two GVB interviews and a survey at four contrasting tram stops. It connected passenger experience with the design of trams and stops, including shade, ventilation, greenery and material choices.",
-    image: "/images/project-tram-heat.jpg",
+    image: "/images/project-tram-heat.png",
     imageAlt: "Survey results on alternative travel modes and willingness to switch from trams during heat",
     tools: ["Mixed methods", "Survey design", "Expert interviews", "Python", "Regression", "Thermal comfort"],
     stats: [
@@ -127,7 +127,7 @@ export const projects: Project[] = [
       "A critical review of rapid utility-scale solar expansion through spatial-justice, socio-technical and ecosystem perspectives.",
     overview:
       "The essay examined South Korea's Renewable Energy 3020 programme in the Honam region and asked why technically successful renewable projects can still create social and ecological conflict. Dutch solar-park approaches were used for comparison.",
-    image: "/images/project-solar-farms.jpg",
+    image: "/images/project-solar-farms.png",
     imageAlt: "Diagrams comparing narrow and integrated understandings of sustainability",
     tools: ["Policy analysis", "Spatial justice", "Socio-technical systems", "Ecosystem thinking", "Comparative research"],
     stats: [
@@ -150,7 +150,7 @@ export const projects: Project[] = [
       "A simulation study comparing integrated humidity-control HVAC with additional rooftop photovoltaics for a historic Berlin museum.",
     overview:
       "A simplified whole-building model was developed to test energy and humidity-control strategies while preserving exhibition conditions. The analysis compared an integrated HVAC proposal with the marginal benefit of adding panels to the remaining roof area.",
-    image: "/images/project-gropius-bau.jpg",
+    image: "/images/project-gropius-bau.png",
     imageAlt: "Gropius Bau satellite view and OpenStudio model summary",
     tools: ["FloorspaceJS", "OpenStudio", "EnergyPlus", "Radiance", "HVAC modelling", "Solar simulation"],
     stats: [

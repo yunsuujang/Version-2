@@ -7,7 +7,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.title}`,
+    default: siteConfig.name,
     template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.heroDescription,
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.siteUrl,
-    title: `${siteConfig.name} — ${siteConfig.title}`,
+    title: `${siteConfig.name}`,
     description: siteConfig.heroDescription,
     siteName: `${siteConfig.name} Portfolio`,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.title}`,
+    title: `${siteConfig.name}`,
     description: siteConfig.heroDescription,
   },
 };
