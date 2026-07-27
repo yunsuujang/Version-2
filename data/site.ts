@@ -28,19 +28,34 @@ export const siteConfig = {
   siteUrl: "https://yunsu-4ahp.vercel.app",
   resumeUrl: "/downloads/yunsu-jang-resume.pdf",
   heroEyebrow: "Urban planning · Building energy · Sustainability",
-  heroTitle: "Planning sustainable cities and energy-efficient buildings through evidence-based design.",
+  heroTitle: "Designing sustainable places across city and building scales.",
   heroDescription:
-    "I am an MSc MADE student at AMS Institute with a background in civil, environmental and architectural engineering. My work connects urban planning, building energy and sustainability through spatial analysis, building simulation and interdisciplinary research.",
+    "I combine spatial planning, building-energy analysis and engineering judgement to turn sustainability goals into practical decisions.",
   about:
-    "My work sits at the intersection of urban planning, building performance and sustainability. In the MSc Metropolitan Analysis, Design and Engineering programme, I combine GIS, urban research, building-energy simulation and implementation-oriented design to address metropolitan challenges across multiple scales. My engineering education at Korea University, exchange studies at TU Berlin, and professional experience in mobility consulting, energy systems and construction support a practical approach that connects analysis with delivery.",
+    "With a foundation in civil, environmental and architectural engineering and current graduate study in Metropolitan Analysis, Design and Engineering at AMS Institute, I work across the built environment—from neighbourhood planning and infrastructure to building performance. My approach combines spatial evidence, energy modelling, stakeholder research and structured problem-solving. Academic and professional experience in South Korea, Germany and the Netherlands has shaped an international perspective on how cities and buildings can become lower-carbon, more resilient and better aligned with people’s needs.",
   aboutQuote:
-    "I translate spatial, technical and stakeholder evidence into clear planning and design decisions.",
+    "I translate spatial, technical and stakeholder evidence into clear, implementable planning and design decisions.",
 };
 
+export const aboutFocus = [
+  {
+    title: "Urban planning",
+    description: "Spatial analysis, mobility, green infrastructure and evidence-led planning at neighbourhood and metropolitan scales.",
+  },
+  {
+    title: "Building energy",
+    description: "Passive design, whole-building simulation, HVAC analysis and renewable-energy integration.",
+  },
+  {
+    title: "Sustainability",
+    description: "Systems thinking that connects environmental performance with implementation, governance and user needs.",
+  },
+];
+
 export const profileStats = [
-  { value: "3", label: "core fields: urban planning, building energy and sustainability" },
-  { value: "6", label: "research and design projects presented in this portfolio" },
-  { value: "3", label: "professional roles across mobility, energy and construction" },
+  { value: "3", label: "core fields across the built environment" },
+  { value: "6", label: "selected research and design projects" },
+  { value: "3", label: "countries of academic and professional experience" },
 ];
 
 export const skillGroups = [
@@ -82,7 +97,7 @@ export const education = [
     title: "Exchange Studies in Civil Engineering",
     organization: "Technische Universität Berlin",
     description:
-      "Completed project courses in the Civil Systems Engineering track, including building-energy modelling, multi-physics analysis and life-cycle assessment.",
+      "Project courses in building-energy modelling, multi-physics analysis and life-cycle assessment within the Civil Systems Engineering track.",
   },
 ];
 

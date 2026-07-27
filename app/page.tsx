@@ -4,7 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
 import { ArrowRight, ArrowUpRight, Download, Linkedin, Mail, Phone } from "@/components/Icons";
 import { projects } from "@/data/projects";
-import { activities, education, experience, profileStats, siteConfig, skillGroups } from "@/data/site";
+import { aboutFocus, activities, education, experience, profileStats, siteConfig, skillGroups } from "@/data/site";
 
 export default function Home() {
   return (
@@ -15,15 +15,15 @@ export default function Home() {
             <p className="eyebrow">{siteConfig.heroEyebrow}</p>
             <h1><span>{siteConfig.heroTitle}</span></h1>
             <p className="hero-description">{siteConfig.heroDescription}</p>
+
             <div className="hero-actions">
               <Link className="button button-primary" href="#work">View selected work <ArrowRight /></Link>
               <a className="button button-secondary" href={siteConfig.resumeUrl} download>Download resume <Download /></a>
             </div>
+
             <div className="hero-links" aria-label="Contact links">
               <a href={`mailto:${siteConfig.email}`}><Mail /> {siteConfig.email}</a>
-              {siteConfig.phones.map((phone) => (
-                <a href={phone.href} key={phone.href}><Phone /> {phone.label}</a>
-              ))}
+              <a href={siteConfig.phones[0].href}><Phone /> {siteConfig.phones[0].label}</a>
               <a href={siteConfig.linkedin} target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a>
             </div>
           </div>
@@ -31,11 +31,11 @@ export default function Home() {
           <figure className="hero-portrait">
             <Image
               src="/images/yunsu-jang.jpg"
-              alt="Professional portrait of Yunsu Jang"
-              width={600}
-              height={750}
+              alt="Yunsu Jang in a professional portrait"
+              width={1365}
+              height={2048}
               priority
-              sizes="(max-width: 980px) 70vw, 420px"
+              sizes="(max-width: 980px) 85vw, 430px"
             />
             <figcaption>
               <span>Based in</span>
@@ -58,9 +58,10 @@ export default function Home() {
         <div className="container">
           <SectionHeading
             eyebrow="Selected projects"
-            title="Planning, energy and sustainability across urban and building scales."
-            description="Each case study summarises the research question, methods, evidence and practical implications. Public reports can be downloaded directly from the project cards or detail pages."
+            title="Evidence translated into practical planning and design decisions."
+            description="Six concise case studies across urban planning, building energy and sustainability. Each card highlights the result, tools and downloadable report."
           />
+
           <div className="project-list">
             {projects.map((project, index) => (
               <ProjectCard project={project} featured={index === 0} key={project.slug} />
@@ -71,14 +72,25 @@ export default function Home() {
 
       <section id="about" className="section-shell about-section">
         <div className="container about-grid">
-          <div>
+          <div className="about-heading">
             <p className="eyebrow">About</p>
-            <h2>Connecting urban systems with building performance.</h2>
+            <h2>Engineering foundation. Metropolitan perspective. Implementation focus.</h2>
           </div>
+
           <div className="about-copy">
             <p>{siteConfig.about}</p>
             <blockquote>“{siteConfig.aboutQuote}”</blockquote>
           </div>
+        </div>
+
+        <div className="container about-focus-grid">
+          {aboutFocus.map((item, index) => (
+            <article className="about-focus-card" key={item.title}>
+              <span>0{index + 1}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -87,8 +99,9 @@ export default function Home() {
           <SectionHeading
             eyebrow="Capabilities"
             title="A cross-scale technical and research toolkit."
-            description="My skills combine spatial planning, building-energy simulation, engineering analysis and stakeholder-based research."
+            description="Methods selected according to the decision—not used as ends in themselves."
           />
+
           <div className="skills-grid">
             {skillGroups.map((group, index) => (
               <article className="skill-card" key={group.title}>
@@ -139,6 +152,7 @@ export default function Home() {
                   </div>
                 </article>
               ))}
+
               {activities.map((item) => (
                 <article className="timeline-item" key={`${item.period}-${item.title}`}>
                   <span>{item.period}</span>
@@ -150,7 +164,8 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <Link className="text-link timeline-link" href="/resume">Open web resume <ArrowUpRight /></Link>
+
+            <Link className="text-link timeline-link" href="/resume">Open resume PDF <ArrowUpRight /></Link>
           </div>
         </div>
       </section>

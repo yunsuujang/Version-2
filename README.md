@@ -1,24 +1,27 @@
-# Yunsu Jang — Portfolio
+# Yunsu Jang — Portfolio v4
 
-Personal portfolio of Yunsu Jang, focused on urban planning, building energy and sustainability.
+A desktop-first portfolio built with Next.js, React and TypeScript.
 
-## Main sections
+## Main updates in v4
 
-- Professional profile and contact information
-- Six research and design case studies
-- Downloadable public project reports
-- Web resume and downloadable resume PDF
-- Downloadable P3 Korea and Siemens Energy reference letters
+- New full-body professional portrait
+- Refined desktop layout, colour system and spacing
+- Six project cards using real report results and figures
+- Concise project summaries instead of long case-study narratives
+- Structured Key Results, Tech Stack and Download Report sections
+- Professional About section
+- Original resume PDF embedded at `/resume`
+- Downloadable reports and employment reference letters
 
-## Edit content
+## Run locally
 
-- `data/site.ts`: profile, contact, education, experience and skills
-- `data/projects.ts`: project descriptions, methods, outcomes and report links
-- `app/globals.css`: visual styling
-- `public/`: photos, reports, resume and reference letters
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
 
 ## Deploy
 
-Push the repository to GitHub. Vercel will detect Next.js and deploy the `main` branch automatically.
-
-Read `UPDATE_GUIDE_KO.md` for step-by-step Korean instructions and privacy notes.
+Push the repository to GitHub. Vercel will automatically rebuild the connected project.

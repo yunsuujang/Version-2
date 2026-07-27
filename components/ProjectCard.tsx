@@ -11,27 +11,48 @@ export default function ProjectCard({ project, featured = false }: { project: Pr
           className="project-image"
           src={project.image}
           alt={project.imageAlt}
-          width={1200}
-          height={800}
-          sizes={featured ? "(max-width: 900px) 100vw, 100vw" : "(max-width: 900px) 100vw, 50vw"}
+          width={1600}
+          height={1000}
+          sizes={featured ? "(max-width: 1000px) 100vw, 58vw" : "(max-width: 1000px) 100vw, 44vw"}
         />
       </Link>
+
       <div className="project-card-content">
         <div className="project-card-meta">
           <span>{project.eyebrow}</span>
           <span>{project.year}</span>
         </div>
+
         <h3><Link href={`/projects/${project.slug}`}>{project.shortTitle}</Link></h3>
-        <p>{project.summary}</p>
-        <div className="tag-list" aria-label="Project tools">
-          {project.tools.slice(0, featured ? 6 : 5).map((tool) => <span key={tool}>{tool}</span>)}
+        <p className="project-summary">{project.summary}</p>
+
+        <div className="project-information-grid">
+          <section className="project-information-block" aria-labelledby={`${project.slug}-results`}>
+            <p className="project-information-label" id={`${project.slug}-results`}>Key results</p>
+            <div className="project-result-list">
+              {project.stats.map((stat) => (
+                <div className="project-result" key={stat.label}>
+                  <strong>{stat.value}</strong>
+                  <span>{stat.label}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="project-information-block" aria-labelledby={`${project.slug}-tools`}>
+            <p className="project-information-label" id={`${project.slug}-tools`}>Tech stack</p>
+            <div className="tag-list">
+              {project.tools.map((tool) => <span key={tool}>{tool}</span>)}
+            </div>
+          </section>
         </div>
+
         <div className="project-card-actions">
-          <Link className="text-link" href={`/projects/${project.slug}`}>
-            View case study <ArrowUpRight />
+          <Link className="button button-secondary button-small" href={`/projects/${project.slug}`}>
+            Project overview <ArrowUpRight />
           </Link>
           {project.report?.href ? (
-            <a className="text-link text-link-muted" href={project.report.href} download>
+            <a className="button button-primary button-small" href={project.report.href} download>
               {project.report.label} <Download />
             </a>
           ) : project.report?.restricted ? (

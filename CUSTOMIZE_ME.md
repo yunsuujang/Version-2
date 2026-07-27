@@ -1,22 +1,32 @@
-# Quick Customisation Reference
+# Content editing map
 
-## Profile
+## Personal profile
+
 Edit `data/site.ts`.
 
 ## Projects
-Edit `data/projects.ts`. Public report files are stored in `public/reports`.
 
-## Portrait
-Replace `public/images/yunsu-jang.jpg` while keeping the same filename.
+Edit `data/projects.ts`.
 
-## Resume
-Replace `public/downloads/yunsu-jang-resume.pdf`.
+Each project contains:
 
-## Reference letters
-Replace files in `public/reference-letters` and update the corresponding `referenceLetter.href` in `data/site.ts`.
+- title and shortTitle
+- short summary and overview
+- result image
+- three key results
+- tech stack
+- report download link
 
-## Hero heading size
-Edit `.hero-copy h1` in `app/globals.css`. It is currently set to `calc(1rem + 4pt)`.
+## Design
 
-## Confidential report
-The Zaanstad report is deliberately not included as a public download because the source document states that original images must remain confidential.
+Edit the variables at the top of `app/globals.css`.
+
+Project-card titles use:
+
+```css
+font-size: calc(1rem + 4pt);
+```
+
+## Files
+
+Replace files in `public/images`, `public/reports`, `public/downloads`, or `public/reference-letters` while keeping the same filename to avoid code changes.
