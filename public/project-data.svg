@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract geospatial data workflow</title>
+  <desc id="desc">Layered hexagonal cells, network lines, and analytical markers representing an urban GIS workflow.</desc>
+  <rect width="1200" height="800" fill="#f2eee4"/>
+  <defs>
+    <pattern id="hex" width="104" height="90" patternUnits="userSpaceOnUse">
+      <path d="M26 2h52l24 43-24 43H26L2 45Z" fill="none" stroke="#d7d0c0" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#hex)"/>
+  <g opacity=".92">
+    <path d="M286 182h52l24 43-24 43h-52l-24-43Z" fill="#9ec1aa"/>
+    <path d="M390 272h52l24 43-24 43h-52l-24-43Z" fill="#79a58d"/>
+    <path d="M494 362h52l24 43-24 43h-52l-24-43Z" fill="#4b8368"/>
+    <path d="M598 452h52l24 43-24 43h-52l-24-43Z" fill="#276147"/>
+    <path d="M702 542h52l24 43-24 43h-52l-24-43Z" fill="#163f30"/>
+    <path d="M598 272h52l24 43-24 43h-52l-24-43Z" fill="#d7b46c"/>
+    <path d="M702 362h52l24 43-24 43h-52l-24-43Z" fill="#c98e4b"/>
+  </g>
+  <g fill="none" stroke="#365f7a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 610 300 530 440 575 610 495 760 555 920 430 1090 470"/>
+    <path d="M205 130 350 210 520 165 680 245 845 190 1020 275"/>
+  </g>
+  <g fill="#f8f5ed" stroke="#365f7a" stroke-width="6">
+    <circle cx="120" cy="610" r="15"/><circle cx="300" cy="530" r="15"/><circle cx="440" cy="575" r="15"/><circle cx="610" cy="495" r="15"/><circle cx="760" cy="555" r="15"/><circle cx="920" cy="430" r="15"/><circle cx="1090" cy="470" r="15"/>
+    <circle cx="205" cy="130" r="15"/><circle cx="350" cy="210" r="15"/><circle cx="520" cy="165" r="15"/><circle cx="680" cy="245" r="15"/><circle cx="845" cy="190" r="15"/><circle cx="1020" cy="275" r="15"/>
+  </g>
+  <rect x="70" y="70" width="365" height="96" rx="18" fill="#143c2d"/>
+  <text x="100" y="111" fill="#f5f2e9" font-family="Arial, sans-serif" font-size="24" font-weight="700">GEOSPATIAL WORKFLOW</text>
+  <text x="100" y="143" fill="#a9cbb5" font-family="Arial, sans-serif" font-size="18">Prepare · analyse · validate · communicate</text>
+</svg>
